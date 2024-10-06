@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wheels
-          path: dist
+          path: /github/workspace/dist
           overwrite: true
 
   windows:
@@ -75,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wheels
-          path: dist
+          path: /github/workspace/dist
           overwrite: true
 
   macos:
@@ -100,7 +100,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wheels
-          path: dist
+          path: /github/workspace/dist
           overwrite: true
 
   sdist:
@@ -116,7 +116,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: wheels
-          path: dist
+          path: /github/workspace/dist
           overwrite: true
 
   pypi-publish:
