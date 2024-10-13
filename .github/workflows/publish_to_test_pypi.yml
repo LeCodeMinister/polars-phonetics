@@ -7,11 +7,10 @@ name: Publish to TestPyPi
 
 on:
   push:
-    branches-ignore:
-      - master
+    branches:
+      - develop
     tags:
-      - 'v*.*.*dev*'
-      - '!v*.*.*'
+      - '*'
   pull_request:
   workflow_dispatch:
 

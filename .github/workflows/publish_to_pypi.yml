@@ -7,11 +7,10 @@ name: Publish to PyPi
 
 on:
   push:
-    branches-ignore:
+    branches:
       - master
     tags:
-      - 'v*.*.*'
-      - '!v*.*.*.dev*'
+      - '*'
   pull_request:
   workflow_dispatch:
 
