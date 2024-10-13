@@ -170,7 +170,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: dist/
-          merge-multiple: true
+          merge-multiple: true 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.*"
       - name: Publish to TestPyPI
         uses: PyO3/maturin-action@v1
         with:
