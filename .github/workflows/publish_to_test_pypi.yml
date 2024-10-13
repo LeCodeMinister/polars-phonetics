@@ -3,11 +3,11 @@
 #
 #    maturin generate-ci github
 #
-name: publish_to_pypi
+name: Publish to TestPyPi
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
     tags:
       - 'v*.*.*dev*'
