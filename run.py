@@ -1,13 +1,18 @@
 import polars as pl
-from polars_phonetics import dmetaphone
+from polars_phonetics import dmetaphone, soundex, metaphone, nysiis
 
 
 df = pl.DataFrame(
     {
-        "words": ["this", "is", "polars", "phonetics", "python"],
+        "words": ["hello", "this", "is", "the", "phonetics", "plugin", "in", "polars", None],
     }
 )
-result = df.with_columns(dmetaphone=dmetaphone("words"))
+result = df.with_columns(
+    dmetaphone=dmetaphone("words"),
+    soundex=soundex("words"),
+    metaphone=metaphone("words"),
+    nysiis=nysiis("words"),
+)
 
 with pl.Config() as cfg:
     cfg.set_tbl_cols(-1)

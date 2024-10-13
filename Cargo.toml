@@ -1,6 +1,6 @@
 [package]
 name = "polars-phonetics"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 
 [lib]
@@ -19,4 +19,3 @@ rphonetic = { version = "2.2.1" }
 # a release
 [patch.crates-io]
 pyo3-polars = { git = "https://github.com/pola-rs/pyo3-polars.git" }
-

@@ -7,4 +7,8 @@ venv
 *.dll
 *.pyd
 polars_plugins
-
+my_sandbox.py
+publish_to_pypi_original.yml
+__pycache__
+.pytest_cache
+.vscode
